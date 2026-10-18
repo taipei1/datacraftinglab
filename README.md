@@ -28,3 +28,24 @@ week-01
 - `FlourMills_Sales_2022_2024.csv` — zdrojové dáta k tabuľke `flourmills_sales` (10 000 záznamov).
 
 Dátové súbory sú v repozitári zámerne, aby bolo možné databázy a riešenia znovu vytvoriť.
+
+## Vetva week-04
+
+Obsahuje SQL skripty a dátové súbory k cvičeniam 4. týždňa:
+
+```
+week-04
+│
+├── 01_window_functions_retail.sql
+├── 02_window_functions.sql
+│
+└── online_retail.csv
+```
+
+- `01_window_functions_retail.sql` — window functions nad databázou `retail` (tabuľka `retail_sales`,
+  11 úloh: príprava tabuľky, rámce RANGE, LAG/LEAD, NTILE, ROW_NUMBER, RANK/DENSE_RANK).
+- `02_window_functions.sql` — window functions nad databázou `superstore` (tabuľky `customers`,
+  `orders`, `products`, 8 úloh).
+- `online_retail.csv` — zdrojové dáta k tabuľke `retail_sales` (92 822 záznamov, oddeľovač `;`).
+
+Archív zadania: `seminar4_zadanie_1c/`, `seminar4_zadanie_1d/`.
