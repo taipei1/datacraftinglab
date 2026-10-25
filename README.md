@@ -49,3 +49,37 @@ week-04
 - `online_retail.csv` — zdrojové dáta k tabuľke `retail_sales` (92 822 záznamov, oddeľovač `;`).
 
 Archív zadania: `seminar4_zadanie_1c/`, `seminar4_zadanie_1d/`.
+
+## Vetva week-05
+
+Obsahuje notebooky a dátové súbory k cvičeniam 5. týždňa:
+
+```
+week-05
+│
+├── file_handling.ipynb            práca so súbormi (Excel, CSV, Parquet)
+├── error_handling.ipynb           validácia dát a spracovanie chýb
+│
+├── sales_report.xlsx              vstup – Excel
+├── employees.csv                  vstup – CSV
+├── sales_report+(1).csv           vstup – CSV pre Parquet
+├── sales_data_dirty.csv           vstup – nekonzistentné dáta
+│
+├── west_region_sales.xlsx         výstup (filtrácia regiónu West)
+├── it_employees.csv               výstup (IT oddelenie)
+├── high_salary.csv                výstup (nadpriemerné platy)
+├── sales_report.parquet           výstup (CSV → Parquet)
+├── sales_report2.parquet          výstup (nový Parquet dataset)
+├── sales_data_clean.csv           výstup validácie – čisté dáta
+├── sales_data_rejected.csv        výstup validácie – zamietnuté záznamy
+├── validation_report.csv          výstup validácie – prehľad pravidiel
+│
+├── green_tripdata_2024-01.parquet pridelený NYC Green Taxi dataset
+└── yellow_tripdata_2024-01.parquet NYC Yellow Taxi dataset
+```
+
+- `file_handling.ipynb` — načítanie a zápis CSV, XLSX a Parquet, schéma a metadáta
+  Parquet súboru, row groups, column pruning, samostatné úlohy 1–6 nad Green Taxi dátami.
+- `error_handling.ipynb` — bezpečné načítanie, audit datasetu, validačné pravidlá pre
+  OrderID, kategórie, čísla, dátumy a telefónne čísla, validačný report, oddelenie
+  čistých a zamietnutých záznamov.

@@ -1,0 +1,14 @@
+pravidlo,pocet_problemov
+neplatny_format_order_id,0
+duplicitne_order_id,22
+neplatny_region,0
+neplatny_produkt,31
+neplatne_mnozstvo,29
+neplatna_suma,22
+neplatna_zlava,8
+neplatny_datum_objednavky,3
+neplatny_datum_dodania,10
+dodanie_pred_objednavkou,18
+neplatny_telefon,34
+chybajuce_meno,22
+chybajuca_zlava,12
