@@ -1,7 +1,10 @@
-# Týždeň 6 – Dátové sklady a dimenzionálne modelovanie
+# Týždeň 6 a 7 – Dátové sklady a dimenzionálne modelovanie
 
 Tento priečinok obsahuje riešenia seminára 6 pre predmet **Databázové technológie**.
 Všetky tri zadania boli odovzdané v Moodle dňa 1. 11. 2026.
+
+Riešenia seminára 7 (snehová vločka) sú v samostatných priečinkoch
+`seminar7_zadanie_1d/` (Northwind) a `seminar7_zadanie_1e/` (Pagila).
 
 ## Štruktúra
 
@@ -96,3 +99,23 @@ Podľa Inmona/Kimballa je to **predmetovo orientované, integrované, časovo va
 - Otázka 2 (short answer): **nesprávna** – odpoveď bola príliš dlhá; viď poznámka vyššie.
 - Otázka 8 (MovieLens ERD + DDL): odovzdaná príloha `seminar6_1a_movielens.zip`.
 - Test bol odoslaný a ukončený.
+
+## Seminár 7 – snehová vločka
+
+### 1d – Northwind
+- **Grain:** 1 riadok `fact_order_line` = 1 položka objednávky.
+- **Fakt:** `quantity`, `unit_price`, `discount`, `line_amount`.
+- **Dimenzie:** `dim_date`, `dim_customer`, `dim_product`, `dim_employee`, `dim_shipper`.
+- **Snehová vločka:** `dim_customer`, `dim_employee`, `dim_shipper` a `dim_supplier`
+  cez `dim_city → dim_country`; `dim_product → dim_category`, `dim_supplier`.
+- **Súbory:** `seminar7_zadanie_1d/` – ERD PNG, DDL a ZIP na odovzdanie.
+
+### 1e – Pagila
+- **Grain:** 1 riadok `fact_rental` = 1 výpožička jednej kópie filmu.
+- **Fakt:** `rental_fee`, `rental_days`, `late_days`, `late_fee`, `rental_count`, `is_returned`.
+- **Dimenzie:** `dim_date` (dva role-playing odkazy), `dim_customer`, `dim_staff`, `dim_inventory`.
+- **Snehová vločka:** `dim_customer → dim_address → dim_city → dim_country`;
+  `dim_staff → dim_store → dim_address → dim_city → dim_country`;
+  `dim_inventory → dim_film → dim_language`, `dim_inventory → dim_store`.
+- **Bridge:** `bridge_film_category` pre M:N film – kategória.
+- **Súbory:** `seminar7_zadanie_1e/` – ERD PNG, DDL a ZIP na odovzdanie.
